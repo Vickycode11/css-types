@@ -2,13 +2,110 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Inline CSS Example</title>
+  <title>CSS Fonts, Colors, Text Styles</title>
+
+  <!-- Internal CSS -->
+  <style>
+    /* Universal Selector */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Roboto', sans-serif;
+      background-color: #f0f8ff;
+      padding: 20px;
+      line-height: 1.6;
+    }
+
+    header {
+      text-align: center;
+      padding: 20px;
+      background-color: #4CAF50;
+      color: white;
+      font-family: 'Georgia', serif;
+      text-transform: uppercase;
+      letter-spacing: 2px;
+    }
+
+   
+
+    
+
+    section {
+      margin: 20px 0;
+    }
+
+    h2 {
+      color: #2c3e50;
+      margin-bottom: 10px;
+      font-family: 'Verdana', sans-serif;
+      text-align: left;
+    }
+
+    p {
+      color: #555;
+      font-size: 18px;
+      margin-bottom: 15px;
+    }
+
+    .special-text {
+      color: #d35400;
+      font-style: italic;
+      font-weight: bold;
+      text-decoration: underline;
+      background-color: #fdebd0;
+      padding: 10px;
+      border-radius: 5px;
+    }
+
+    .quote {
+      font-family: 'Courier New', monospace;
+      font-size: 20px;
+      color: darkslategray;
+      text-align: center;
+      background-color: #e0ffff;
+      padding: 15px;
+      margin-top: 20px;
+      border-left: 5px solid #00bcd4;
+    }
+
+
+
+    
+      </style>
+
 </head>
 <body>
 
-  <h1 style="color: red; text-align: center;">This is Inline CSS</h1>
-  <p style="font-size: 20px; color: blue; text-align: center;">Inline CSS is applied directly to the HTML element using the style attribute.</p>
- 
+  <header>
+    css styling examples
+  </header>
+
+  
+
+  <section>
+    <h2>Different Fonts Usage</h2>
+    <p>This paragraph uses <strong>Roboto</strong> font from Google Fonts for body text, which looks modern and clean.</p>
+    <p class="special-text">This text is styled differently with Georgia font and special italic bold styling.</p>
+  </section>
+
+  <section>
+    <h2>Different Colors Applied</h2>
+    <p style="color: navy;">This paragraph uses <strong>inline CSS</strong> to color the text navy directly inside the HTML element.</p>
+    <p>This section shows the use of <span style="color: #e91e63;">different colors</span> using both internal and inline CSS methods.</p>
+  </section>
+
+  <section>
+    <h2>Different Text Properties</h2>
+    <p class="quote">"Design is not just what it looks like and feels like. Design is how it works." - Steve Jobs</p>
+
+
+  </section>
+
+  
 
 </body>
 </html>
